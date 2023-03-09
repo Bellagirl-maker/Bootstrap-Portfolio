@@ -27,36 +27,71 @@
       .headline {
         margin-top: 100px;
       }
+
       .fa {
         width: 30px;
         font-size: larger;
       }
+
       .main-container {
-        width: 1400px;
+        width: 100%;
         border-radius: 0 0 0 100px;
         background-color: white;
+        background-image: url(./images/Headerbg@2x.png);
+        background-size: 100%;
+        background-position: top 20%;
       }
+
       .projects-section {
         gap: 88px;
         margin-top: 90px;
         /* border-radius: 16px; */
       }
+
       .Counter {
         width: 8px;
         height: 8px;
       }
+      
       .list-inline-item {
         color: #6070ff;
         background: #ebebff;
         padding: 4px 12px;
         border-radius: 8px;
       }
+
       .works {
         border-radius: 16px;
       }
-      .Langbtn {
-       
+
+      .about {
+        border-radius: 0 100px 0 0;
+      
       }
+
+      .lang {
+        justify-content: space-between;
+      }
+
+      .contact-me {
+    background-image: url(images/contact\ form\ background\ shapes\ desktop.png);
+    background-size: 100%;
+    background-position: top 20%;
+    padding-bottom: 150px;
+    background-color: #6070ff;
+    border-radius: 100px 0 0 0;
+  }
+
+ .contact-me > * {
+    width: 40%;
+    margin: 0 auto;
+   
+  }
+
+  form {
+    align-items: center;
+  }
+
 
     </style>
   </head>
@@ -259,9 +294,8 @@
                   </ul>
                   <button
                     type="button"
-                    class="btn text-primary btn-white border-primary w-25 mt-3"
-                  >
-                    See Project
+                    class="btn text-primary btn-white border-primary w-25 mt-3">
+                  See Project
                   </button>
                 </div>
               </div>
@@ -329,8 +363,8 @@
           </div>
         </div>
       </section>
-      <div class="row">
-        <div class="col-md-5">
+      <div class="row bg-white about p-5">
+        <div class="col-md-4 m-5">
           <h1>About Myself</h1>
           <p>
             I’m a software developer! I can help you build a product , feature or
@@ -343,24 +377,65 @@
           <i class="fa fa-linkedin"></i>
           <i class="fa fa-medium"></i>
           <i class="fa fa-angellist"></i>
-          <i class="fa fa-github"></i><br>
-          <button class="btn btn-white text-primary border-primary mt-5">Get My Resume</button>
+          <i class="fa fa-github"></i><br />
+          <button class="btn btn-white text-primary border-primary mt-5">
+            Get My Resume
+          </button>
         </div>
-        <div class="col-md-7">
-          <div class="row">
-            <h5 class="col-md-11">Languages</h5>
-            <img class="col-md Langbtn" src="./images/Langbtn.png" alt="">
+        <div class="col-md-6">
+          <div class="d-flex mx-auto lang">
+            <h5 class="">Languages</h5>
+            <div class="float-right">
+              <img class="" src="./images/Langbtn.png" alt="Lang dropdown" />
+            </div>
           </div>
-          <div class="row">
-            <ul class="list-group ">
-              <li >javascript</li>
-              <li >HTML</li>
-              <li>CSS</li>
-            </ul>
+          <ul class="list-inline mt-3 mb-3">
+            <li class="list-inline-item">
+              <img src="./images/javaScript.png" alt="Javascript icon" /><br />
+              <a class="text-dark text-decoration-none" href="#JS">Javascript</a>
+            </li>
+            <li class="list-inline-item">
+              <img src="./images/html.png" alt="HTML icon" /><br />
+              <a class="text-dark text-decoration-none" href="#html">HTML</a>
+            </li>
+            <li class="list-inline-item">
+              <img src="./images/css.png" alt="CSS icon" /><br />
+              <a class="text-dark text-decoration-none" href="#CSS">CSS</a>
+            </li>
+          </ul>
+          <div class="d-flex mx-auto mt-4 lang">
+            <h5 class="">Frameworks</h5>
+            <div class="float-right">
+              <img class="" src="./images/framework.png" alt="" />
+            </div>
           </div>
-          
-          
+          <hr />
+          <div class="d-flex mx-auto mt-4 lang">
+            <h5 class="">Skills</h5>
+            <div class="float-right">
+              <img class="" src="./images/framework.png" alt="" />
+            </div>
+          </div>
+          <hr />
         </div>
-      </section>
+      </div>
+      <div class="container-fluid contact-me p-5">
+          <h2 class="mb-1 text-center text-light display-5 fw-bold">Contact me</h2>
+          <p class="mb-3 text-center text-light h4">If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I'd love to help with it </p>
+          <div class="mb-3 text-center">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Yeremias" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="natajayan14@gmail.com">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" maxlength="500" required></textarea>
+          </div>
+          <div class="mb-3 text-center">
+            <button class="btn btn-light text-primary border-primary btn-lg">Get in touch</button>
+          </div>
+          </div>
+        </form>
+      </div>
   </body>
 </html>
